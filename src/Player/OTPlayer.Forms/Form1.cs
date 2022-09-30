@@ -13,14 +13,27 @@ namespace OTPlayer.Forms
         }
 
         VlcControl vlcControl;
+        Panel panel;
         void InitPalyCon() {
             vlcControl = new VlcControl();
-            splitContainer1.Panel1.Controls.Add(vlcControl);
+            Controls.Add(vlcControl);
             vlcControl.Dock = DockStyle.Fill;
             //设置vlc平台所属的文件事件
             vlcControl.VlcLibDirectoryNeeded += VlcControl_VlcLibDirectoryNeeded;
             //文件播放时间变化事件
             vlcControl.TimeChanged += VlcControl_TimeChanged;
+            panel = new Panel();
+            panel.
+            //1018, 59 0.572
+            vlcControl.Controls.Add()
+            panel1.Click += Panel1_Click;
+            this.BackColor = Color.White; this.TransparencyKey = Color.White;
+            //this.Opacity = 0.8;
+        }
+
+        private void Panel1_Click(object? sender, EventArgs e)
+        {
+            panel1.Visible = false;
         }
 
         private void VlcControl_TimeChanged(object? sender, Vlc.DotNet.Core.VlcMediaPlayerTimeChangedEventArgs e)
@@ -33,6 +46,7 @@ namespace OTPlayer.Forms
             var assembly = Assembly.GetEntryAssembly();
             var directory = new FileInfo(assembly.Location).DirectoryName;
             if (null == directory) { return; }
+            //Environment.Is64BitOperatingSystem
             if (4 == IntPtr.Size)
             {
                 e.VlcLibDirectory = new DirectoryInfo(Path.GetFullPath(@".\libvlc\win-x86"));
