@@ -3,14 +3,14 @@
 
   <PropertyGroup>
     <Title>Vlc.DotNet.Wpf</Title>
-    <TargetFrameworks>net35;net40;net45;netcoreapp3.0</TargetFrameworks>
+    <TargetFrameworks>net48;net6.0-windows</TargetFrameworks>
     <Description>WPF control that hosts the audio/video capabilities of the VLC libraries.</Description>
     <PackageTags>vlc media wpf</PackageTags>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Vlc.DotNet.Core\Vlc.DotNet.Core.csproj" />
+    <ProjectReference Include="..\Vlc.DotNet.Forms\Vlc.DotNet.Forms.csproj" />
   </ItemGroup>
 
 </Project>

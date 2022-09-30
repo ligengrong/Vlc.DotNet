@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32708.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vlc.DotNet.Core.Interops", "Vlc.DotNet.Core.Interops\Vlc.DotNet.Core.Interops.csproj", "{DCF701C3-6635-4B9F-A90F-5D71B5BCE0C7}"
 EndProject
@@ -41,6 +41,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WinForms.MultiplePlayers", "Samples\Samples.WinForms.MultiplePlayers\Samples.WinForms.MultiplePlayers.csproj", "{7EA1C3C5-72EA-4721-BD78-4FACBED5920C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WinForms.InitWithCode", "Samples\Samples.WinForms.InitWithCode\Samples.WinForms.InitWithCode.csproj", "{A2C8DBD2-D3C5-416E-AB8E-FDED1043FE79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Player", "Player", "{636A0FAD-9F7E-4D55-B4C6-0DB7307EA61B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OTPlayer.Forms", "Player\OTPlayer.Forms\OTPlayer.Forms.csproj", "{3B1C9757-0E7F-4AFC-9AF7-AB8C119C4689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -112,6 +116,10 @@ Global
 		{A2C8DBD2-D3C5-416E-AB8E-FDED1043FE79}.Debug|AnyCPU.Build.0 = Debug|Any CPU
 		{A2C8DBD2-D3C5-416E-AB8E-FDED1043FE79}.Release|AnyCPU.ActiveCfg = Release|Any CPU
 		{A2C8DBD2-D3C5-416E-AB8E-FDED1043FE79}.Release|AnyCPU.Build.0 = Release|Any CPU
+		{3B1C9757-0E7F-4AFC-9AF7-AB8C119C4689}.Debug|AnyCPU.ActiveCfg = Debug|Any CPU
+		{3B1C9757-0E7F-4AFC-9AF7-AB8C119C4689}.Debug|AnyCPU.Build.0 = Debug|Any CPU
+		{3B1C9757-0E7F-4AFC-9AF7-AB8C119C4689}.Release|AnyCPU.ActiveCfg = Release|Any CPU
+		{3B1C9757-0E7F-4AFC-9AF7-AB8C119C4689}.Release|AnyCPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +137,7 @@ Global
 		{FAAE9D11-0762-43AF-91AD-DC28F275D1E6} = {44AE198F-A3F8-45F9-85CF-605858D6BD59}
 		{7EA1C3C5-72EA-4721-BD78-4FACBED5920C} = {44AE198F-A3F8-45F9-85CF-605858D6BD59}
 		{A2C8DBD2-D3C5-416E-AB8E-FDED1043FE79} = {44AE198F-A3F8-45F9-85CF-605858D6BD59}
+		{3B1C9757-0E7F-4AFC-9AF7-AB8C119C4689} = {636A0FAD-9F7E-4D55-B4C6-0DB7307EA61B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8200848B-5F8D-4A79-B989-3A667BE003E0}
